@@ -13,6 +13,14 @@ module.exports = {
   devServer: {
     watchFiles: ["./src/template.html"],
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|svg)$/i,
+        type: 'asset/resource',
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
