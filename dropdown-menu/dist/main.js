@@ -1,0 +1,32 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ (() => {
+
+eval("// import DropdownIcon from './images/menu.svg';\n// add stuff\nconst DropdownIcon = \"\";\n\nconst dropdownMenu = function createNewDropdownMenu(menu, dropdownContent) {\n\n  const addMenuIcon = function addMenuIconToMenu() {\n    const dropIcon = new Image();\n    dropIcon.src = DropdownIcon;\n    menu.appendChild(dropIcon);\n  };\n\n  const createContent = function createDropdownContent() {\n    dropdownContent.style = \"border: none; width: 160px; display:none;\";\n    dropdownContent.class = \"hidden\";\n\n    const style = document.createElement(\"style\");\n    const cssForButton = dropdownContent.firstChild.class;\n    console.log(dropdownContent.firstChild);\n    style.innerHTML = `\n          .${cssForButton} {\n            appearance: none;\n            background-color: azure;\n            border: none;\n          }\n          .${cssForButton}:hover {\n            background-color: cornflowerblue;\n          }\n        `;\n\n    document.head.appendChild(style);\n  };\n\n  const dropdown = function dropdownMenuItemsOnClick() {\n    if (dropdownContent.class == \"hidden\") {\n      dropdownContent.style =\n        \"border: none; width: 160px; display:flex; flex-direction: column;\";\n      dropdownContent.class = \"visible\";\n    } else {\n      dropdownContent.style = \"border: none; width: 160px; display:none;\";\n      dropdownContent.class = \"hidden\";\n    }\n  };\n\n  addMenuIcon();\n  menu.style = `\n    appearance: none;\n    background-color: azure;\n    border: none;\n    width: 160px;\n    display: flex;\n    justify-content: center;\n    gap: 4px\n    `;\n  menu.addEventListener(\"click\", dropdown);\n  createContent();\n};\n\nconst menu = document.querySelector(\"#menu-button\");\nconst dropdownContent = document.querySelector(\"#drop-down-content\");\n\ndropdownMenu(menu, dropdownContent);\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBOztBQUVBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQSwyQ0FBMkMsY0FBYyxhQUFhO0FBQ3RFOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsYUFBYTtBQUNiO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsYUFBYSxhQUFhO0FBQzFCO0FBQ0E7QUFDQTs7QUFFQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBLHVCQUF1QixjQUFjLGNBQWMsdUJBQXVCO0FBQzFFO0FBQ0EsTUFBTTtBQUNOLDZDQUE2QyxjQUFjLGFBQWE7QUFDeEU7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9kcm9wZG93bi1tZW51Ly4vc3JjL2luZGV4LmpzP2I2MzUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gaW1wb3J0IERyb3Bkb3duSWNvbiBmcm9tICcuL2ltYWdlcy9tZW51LnN2Zyc7XG4vLyBhZGQgc3R1ZmZcbmNvbnN0IERyb3Bkb3duSWNvbiA9IFwiXCI7XG5cbmNvbnN0IGRyb3Bkb3duTWVudSA9IGZ1bmN0aW9uIGNyZWF0ZU5ld0Ryb3Bkb3duTWVudShtZW51LCBkcm9wZG93bkNvbnRlbnQpIHtcblxuICBjb25zdCBhZGRNZW51SWNvbiA9IGZ1bmN0aW9uIGFkZE1lbnVJY29uVG9NZW51KCkge1xuICAgIGNvbnN0IGRyb3BJY29uID0gbmV3IEltYWdlKCk7XG4gICAgZHJvcEljb24uc3JjID0gRHJvcGRvd25JY29uO1xuICAgIG1lbnUuYXBwZW5kQ2hpbGQoZHJvcEljb24pO1xuICB9O1xuXG4gIGNvbnN0IGNyZWF0ZUNvbnRlbnQgPSBmdW5jdGlvbiBjcmVhdGVEcm9wZG93bkNvbnRlbnQoKSB7XG4gICAgZHJvcGRvd25Db250ZW50LnN0eWxlID0gXCJib3JkZXI6IG5vbmU7IHdpZHRoOiAxNjBweDsgZGlzcGxheTpub25lO1wiO1xuICAgIGRyb3Bkb3duQ29udGVudC5jbGFzcyA9IFwiaGlkZGVuXCI7XG5cbiAgICBjb25zdCBzdHlsZSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJzdHlsZVwiKTtcbiAgICBjb25zdCBjc3NGb3JCdXR0b24gPSBkcm9wZG93bkNvbnRlbnQuZmlyc3RDaGlsZC5jbGFzcztcbiAgICBjb25zb2xlLmxvZyhkcm9wZG93bkNvbnRlbnQuZmlyc3RDaGlsZCk7XG4gICAgc3R5bGUuaW5uZXJIVE1MID0gYFxuICAgICAgICAgIC4ke2Nzc0ZvckJ1dHRvbn0ge1xuICAgICAgICAgICAgYXBwZWFyYW5jZTogbm9uZTtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IGF6dXJlO1xuICAgICAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuJHtjc3NGb3JCdXR0b259OmhvdmVyIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IGNvcm5mbG93ZXJibHVlO1xuICAgICAgICAgIH1cbiAgICAgICAgYDtcblxuICAgIGRvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQoc3R5bGUpO1xuICB9O1xuXG4gIGNvbnN0IGRyb3Bkb3duID0gZnVuY3Rpb24gZHJvcGRvd25NZW51SXRlbXNPbkNsaWNrKCkge1xuICAgIGlmIChkcm9wZG93bkNvbnRlbnQuY2xhc3MgPT0gXCJoaWRkZW5cIikge1xuICAgICAgZHJvcGRvd25Db250ZW50LnN0eWxlID1cbiAgICAgICAgXCJib3JkZXI6IG5vbmU7IHdpZHRoOiAxNjBweDsgZGlzcGxheTpmbGV4OyBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1wiO1xuICAgICAgZHJvcGRvd25Db250ZW50LmNsYXNzID0gXCJ2aXNpYmxlXCI7XG4gICAgfSBlbHNlIHtcbiAgICAgIGRyb3Bkb3duQ29udGVudC5zdHlsZSA9IFwiYm9yZGVyOiBub25lOyB3aWR0aDogMTYwcHg7IGRpc3BsYXk6bm9uZTtcIjtcbiAgICAgIGRyb3Bkb3duQ29udGVudC5jbGFzcyA9IFwiaGlkZGVuXCI7XG4gICAgfVxuICB9O1xuXG4gIGFkZE1lbnVJY29uKCk7XG4gIG1lbnUuc3R5bGUgPSBgXG4gICAgYXBwZWFyYW5jZTogbm9uZTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBhenVyZTtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgd2lkdGg6IDE2MHB4O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgZ2FwOiA0cHhcbiAgICBgO1xuICBtZW51LmFkZEV2ZW50TGlzdGVuZXIoXCJjbGlja1wiLCBkcm9wZG93bik7XG4gIGNyZWF0ZUNvbnRlbnQoKTtcbn07XG5cbmNvbnN0IG1lbnUgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiI21lbnUtYnV0dG9uXCIpO1xuY29uc3QgZHJvcGRvd25Db250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIiNkcm9wLWRvd24tY29udGVudFwiKTtcblxuZHJvcGRvd25NZW51KG1lbnUsIGRyb3Bkb3duQ29udGVudCk7XG5cblxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/index.js\n");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/index.js"]();
+/******/ 	
+/******/ })()
+;
