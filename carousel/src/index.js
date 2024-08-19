@@ -37,12 +37,20 @@ rightArrow.textContent = ">";
 rightArrow.style = "font-size: 80px;";
 
 const dots = document.createElement("div");
+dots.style.cssText = 'display: flex; justify-content: center;';
 
 for(let i = 0; i <= imgListLength; i++) {
   const dot = document.createElement("span");
   dot.classList.add('dot');
   dots.appendChild(dot);
+  dot.value = `${i}`
+  if(i == 0) {
+    dot.setAttribute('id', 'selectedDot');
+  }
+  
 }
+
+
 
 slides.appendChild(first);
 slides.appendChild(second);
@@ -80,3 +88,22 @@ const switchNext = function switchToNextImage() {
 
 leftArrow.addEventListener("click", switchPrev);
 rightArrow.addEventListener("click", switchNext);
+
+const clickDot = function moveImageOnDotClick (event) {
+  if(event.target.classList == 'dot') {
+
+    const prevDot = document.querySelector('#selectedDot');
+    prevDot.removeAttribute('id');
+
+    const imgIndex = event.target.value;
+    slides.style.cssText = `display: flex; position: relative; right: ${imgIndex * imgSize}px;`;
+    event.target.setAttribute('id', 'selectedDot')
+  }
+}
+
+dots.addEventListener('click', clickDot);
+
+
+
+setInterval(switchNext, 5000);
+

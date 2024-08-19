@@ -12,12 +12,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(jpg|png|svg)$/i, 
-        type: 'asset/resource',
-      },
-      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(jpg|png|svg)$/i, 
+        type: 'asset/resource',
       },
     ],
   },
